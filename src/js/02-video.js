@@ -10,23 +10,3 @@ function onPlay(data) {
 }
 const currentTime = localStorage.getItem('videoplayer-current-time') || 0;
 player.setCurrentTime(currentTime);
-
-// let savedTime = localStorage.getItem('videoplayer-current-time');
-// if (savedTime != null) {
-//   player.setCurrentTime(savedTime);
-
-//   console.log(savedTime);
-// }
-
-// player.on(
-//   'pause',
-//   throttle(function (data) {
-//     player.getCurrentTime().then(function (seconds) {
-//       localStorage.setItem(
-//         'videoplayer-current-time',
-//         JSON.stringify(data.seconds)
-//       );
-//     });
-//   }),
-//   500
-// );
